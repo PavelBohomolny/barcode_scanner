@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA81ADA0291146D6008CA1EF /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81AD9F291146D6008CA1EF /* Alerts.swift */; };
+		FA81ADA229114739008CA1EF /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81ADA129114739008CA1EF /* BarcodeScannerViewModel.swift */; };
 		FAB849A6290D491C001112D3 /* Barcode_ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB849A5290D491C001112D3 /* Barcode_ScannerApp.swift */; };
 		FAB849A8290D491C001112D3 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB849A7290D491C001112D3 /* BarcodeScannerView.swift */; };
 		FAB849AA290D491E001112D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB849A9290D491E001112D3 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA81AD9F291146D6008CA1EF /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		FA81ADA129114739008CA1EF /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 		FAB849A2290D491C001112D3 /* Barcode Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barcode Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB849A5290D491C001112D3 /* Barcode_ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode_ScannerApp.swift; sourceTree = "<group>"; };
 		FAB849A7290D491C001112D3 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA81ADA3291149C7008CA1EF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA81ADA4291149D9008CA1EF /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA81ADA4291149D9008CA1EF /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				FAB849A7290D491C001112D3 /* BarcodeScannerView.swift */,
+				FA81ADA129114739008CA1EF /* BarcodeScannerViewModel.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		FA81ADA529114A07008CA1EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA81ADA629114A12008CA1EF /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA81ADA629114A12008CA1EF /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAB849B529113190001112D3 /* ScannerView.swift */,
+				FAB849B3290D6084001112D3 /* ScannerViewController.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		FA81ADA729114A6D008CA1EF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA81AD9F291146D6008CA1EF /* Alerts.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FAB84999290D491C001112D3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				FAB849A5290D491C001112D3 /* Barcode_ScannerApp.swift */,
-				FAB849A7290D491C001112D3 /* BarcodeScannerView.swift */,
-				FAB849B529113190001112D3 /* ScannerView.swift */,
-				FAB849B3290D6084001112D3 /* ScannerViewController.swift */,
+				FA81ADA529114A07008CA1EF /* Views */,
+				FA81ADA3291149C7008CA1EF /* Screens */,
+				FA81ADA729114A6D008CA1EF /* Utilities */,
 				FAB849A9290D491E001112D3 /* Assets.xcassets */,
 				FAB849AB290D491E001112D3 /* Preview Content */,
 			);
@@ -143,7 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA81ADA229114739008CA1EF /* BarcodeScannerViewModel.swift in Sources */,
 				FAB849A8290D491C001112D3 /* BarcodeScannerView.swift in Sources */,
+				FA81ADA0291146D6008CA1EF /* Alerts.swift in Sources */,
 				FAB849B629113190001112D3 /* ScannerView.swift in Sources */,
 				FAB849B4290D6084001112D3 /* ScannerViewController.swift in Sources */,
 				FAB849A6290D491C001112D3 /* Barcode_ScannerApp.swift in Sources */,
